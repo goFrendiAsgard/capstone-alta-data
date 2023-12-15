@@ -96,24 +96,29 @@ Penambahan angka detail discrepancy bisa membantu stakeholder untuk menentuk fit
     - Ada barang yang tercatat di penjualan manual, tapi tidak ada di sistem ERP.
     - Ada barang yang tercatat di sistem ERP, tapi tidak ada di manual.
 
-`Sukses kriteria adalah penpaian dengan matris yang  kongkrit, contoh: menylesaikan fitur A dengan testing coverate 80%, implementati Trunk Base Development, Implementasi Code Quality, Implmentasi CI/CD, dan lain-lain.`
 
 #### Documentation
 
-`Jika ada dokumentasi tambahan yang diberikan ke Mentees.`
+```
+  ┌───────────┐        ┌──────────────┐        ┌─────────────┐
+  │           │1   Many│              │Many   1│             │
+  │  Product  ├────────┤  Sales Item  ├────────┤   Sales     │
+  │           │        │              │        │             │
+  └───────────┘        └──────────────┘        └─────────────┘
+```
 
-#### Assest
 
-- sql
-    - ddl.sql
-    - products.sql
-    - sales.sql
-    - sales_item.sql
-- csv
-    - ddl.csv
-    - products.csv
-    - sales.csv
-    - sales_item.csv
+#### Assets
+
+- sql (mewakili data di sistem ERP)
+    - [ddl.sql](ddl.sql)
+    - [products.sql](product.sql)
+    - [sales.sql](sales.sql)
+    - [sales_item.sql](sales_item.sql)
+- csv (mewakili data di spreadsheet)
+    - [products.csv](products.csv)
+    - [sales.csv](sales.csv)
+    - [sales_item.csv](sales_item.csv)
 
 ## 📆 Schedule Meeting and Format Mentoring
 
